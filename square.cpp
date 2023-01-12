@@ -1,6 +1,6 @@
 #include<iostream>
 #include<conio.h>
-using namespace std;
+using namespace std;//
 int main(){
     int x;
     cout<<"enter a number"<<endl;
