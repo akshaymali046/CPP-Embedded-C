@@ -1,33 +1,24 @@
-#include <cstring>
-#include<iostream>
+// Program to check whether an integer is positive or negative
+// This program considers 0 as a positive number
 
+#include <iostream>
 using namespace std;
 
-struct book
-{
-    private: // only accessable in private
-    int bookid;
-    char title[20];
-    float price;
+int main() {
 
-    public:
-    void input(){
-        cout<<"enter id,title,price";
-        cin>>bookid>>title>>price;
-        if (bookid < 0) {
-           bookid=-1*bookid;
-           }
-    }
+  int number;
 
-    void display(){
-        cout<<bookid<<title<<price;
-    }
-};
+  cout << "Enter an integer: ";
+  cin >> number;
 
-//global defination of structure
-int main(){
-   book b1;
-   b1.input();
-   b1.display();
-   return 0;
+  if (number >= 0) {
+    cout << "You entered a positive integer: " << number << endl;
+  }
+  else {
+    cout << "You entered a negative integer: " << number << endl;
+  }
+
+  cout << "This line is always printed.";
+
+  return 0;
 }
